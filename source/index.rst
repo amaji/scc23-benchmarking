@@ -7,7 +7,8 @@
 ==========================================================================
 
 WARNING: These instructions have been copied from SCC22. They have not yet been updated for SCC23.
----
+
+-----
 
 Each team is allowed up to 5 hardware certification submission attempts. The SCC committee may at their discretion increase the allowable number of hardware certification submission attempts. Only one outstanding hardware certification submission attempt will be considered at a time.
 
