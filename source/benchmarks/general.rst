@@ -5,12 +5,16 @@ A hardware certification submission consists of a team:
 
 - Configuring their cluster hardware as they see fit.
 - Running HPL, HPCG and MLPerf Inference in succession (in any order), following the rules notes below for each, and receiving valid results that do not violate the 3000W PDU power limit for the entirety of both runs and any time in between. The time in between any two benchmark runs must be no more than 30 minutes. For each benchmark, the team should capture:
+
    - Timestamps immediately before and after the run, in a file named like ``cert-${NUMBER}-${BENCHMARK}submission.tstamps``. Teams can capture these timestamps by running:
+
 	``echo `date -u` > cert-${NUMBER}-${BENCHMARK}submission.tstamps`` immediately before the run, and 
 	``echo `date -u` >> cert-${NUMBER}-${BENCHMARK}submission.tstamps`` upon completion of the run (note the ">>" to append rather than overwrite the file).
+
    - The input file used, copied to a file named like ``cert-${NUMBER}-${BENCHMARK}submission.input``
    - The output produced, copied to a file named like ``cert-${NUMBER}-${BENCHMARK}submission.rslts``. Where ``${NUMBER}`` corresponds to the team’s current hardware certification attempt (i.e. 1, 2, 3, 4, or 5), and ``${BENCHMARK}`` is one of "hpl", "hpcg", "mlperf", for example: cert-1-hpcgsubmission.tstamps
-   - The team should also record the information listed in "Configuration Description" below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid top500 submission. Clarification: You can put the configuration description with the HPL input and rslts.
+   - The team should also record the information listed in :ref:`Configuration file<Configuration Description>` below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid top500 submission. Clarification: You can put the configuration description with the HPL input and rslts.
+
 - Uploading all of the files described above (``cert-*-*submission.*``, ``mlperfsubmission.*`` and ``cert-*-configuration.txt``) to the location designated by the SCC committee.
 - Within 10 minutes of completing the set of benchmark runs, sending one team member to alert their team liaison that they are ready to have their hardware configuration certified (you can do this before the upload is complete).
 
@@ -21,8 +25,10 @@ Judges will determine based on the timestamps for each run whether there is a sp
 If all results are valid, the runs have stayed below power limits, and the team has complied with the directions in this document plus any addendums made by the SCC committee, the team’s hardware configuration will be considered certified. If one of these is not met, the configuration will not be considered certified but will still count against a team’s limit of hardware configuration certification attempts.
 Configuration Description
 
-Certification configuration file
---------------------------------
+.. _Configuration file:
+
+Configuration file description
+------------------------------
 
 In order to comply with the Top500 requirements for power measurements, the ``cert-${NUMBER}-configuration.txt`` file should contain the following information from teams for each hardware certification:
 
