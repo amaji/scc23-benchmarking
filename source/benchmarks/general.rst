@@ -3,8 +3,8 @@ General submission instructions
 
 A hardware certification submission consists of a team:
 
-- Configuring their cluster hardware as they see fit.
-- Running HPL, HPCG and MLPerf Inference in succession (in any order), following the rules notes below for each, and receiving valid results that do not violate the 3000W PDU power limit for the entirety of both runs and any time in between. The time in between any two benchmark runs must be no more than 30 minutes. For each benchmark, the team should capture:
+1. Configuring their cluster hardware as they see fit.
+2. Running HPL, HPCG and MLPerf Inference in succession (in any order), following the rules noted below for each, and receiving valid results that do not violate the 4000W PDU power limit for the entirety of benchmark runs and any time in between. *Note that for SCC23, there is also a per-node power limit of 2000W, implying that the power consumption by any single node must not exceed 2000W when the benchmarks are run.* The time in between any two benchmark runs must be no more than 30 minutes. For each benchmark, the team should capture:
 
    - Timestamps immediately before and after the run, in a file named like ``cert-${NUMBER}-${BENCHMARK}submission.tstamps``. Teams can capture these timestamps by running:
 
@@ -13,10 +13,36 @@ A hardware certification submission consists of a team:
 
    - The input file used, copied to a file named like ``cert-${NUMBER}-${BENCHMARK}submission.input``
    - The output produced, copied to a file named like ``cert-${NUMBER}-${BENCHMARK}submission.rslts``. Where ``${NUMBER}`` corresponds to the team’s current hardware certification attempt (i.e. 1, 2, 3, 4, or 5), and ``${BENCHMARK}`` is one of "hpl", "hpcg", "mlperf", for example: cert-1-hpcgsubmission.tstamps
-   - The team should also record the information listed in :ref:`Configuration file<Configuration Description>` below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid top500 submission. Clarification: You can put the configuration description with the HPL input and rslts.
+   - The team should also record the information listed in :ref:`Configuration file<Configuration Description>` below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid top500 submission and must be submitted with the HPL input and results files.
 
-- Uploading all of the files described above (``cert-*-*submission.*``, ``mlperfsubmission.*`` and ``cert-*-configuration.txt``) to the location designated by the SCC committee.
-- Within 10 minutes of completing the set of benchmark runs, sending one team member to alert their team liaison that they are ready to have their hardware configuration certified (you can do this before the upload is complete).
+3. Uploading all of the files described above (``cert-*-*submission.*``, and ``cert-*-configuration.txt``) to the location designated by the SCC committee. Teams are encouraged to organize their results into separate directories for each benchmark. An example is shown below.
+
+.. code-block::
+
+	cert1/
+	|-- hpcg
+	|   |-- cert-1-hpcg-submission.input
+	|   |-- cert-1-hpcg-submission.rslts
+	|   `-- cert-1-hpcg-submission.tstamps
+	|-- hpl
+	|   |-- cert-1-configuration.txt
+	|   |-- cert-1-hpl-submission.input
+	|   |-- cert-1-hpl-submission.rslts
+	|   `-- cert-1-hpl-submission.tstamps
+	|-- mlperf
+	|   |-- cert-1-mlperf-submission.input
+	|   |-- cert-1-mlperf-submission.rslts
+	|   `-- cert-1-mlperf-submission.tstamps
+	|-- osu
+	|   |-- cert-1-osu-submission.input
+	|   |-- cert-1-osu-submission.rslts
+	|   `-- cert-1-osu-submission.tstamps
+	`-- stream
+	    |-- cert-1-stream-submission.input
+	    |-- cert-1-stream-submission.rslts
+	    `-- cert-1-stream-submission.tstamps
+
+4. Within 10 minutes of completing the set of benchmark runs, sending one team member to alert their team liaison that they are ready to have their hardware configuration certified (you can do this before the upload is complete).
 
 The team liaison or another SCC committee member will then inspect the files described above to verify that the runs were valid and in conformance with SCC Benchmarking rules. For in-person teams, the liaison will visually inspect and document the team’s cluster hardware configuration, and may ask questions to understand the hardware configuration and/or changes from one certification attempt to another. For the result to be valid, all of the team's hardware, including spare replacement machines, must be either in the cluster’s rack or on the table with the rest of the cluster’s hardware. If any hardware is later found that was not visible during certification then the certification will be invalidated. 
 
