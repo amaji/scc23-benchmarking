@@ -19,4 +19,8 @@ The HPCG time will be visible in the output file as follows. For the run to be v
    Total: 2116.07
    Floating Point Operations Summary: 
 
+**Files to submit**
 
+- HPCG output saved to a file ``cert-{N}-hpcg.rslts``
+- HPCG input file (``HPCG.dat``) saved to a file ``cert-{N}-hpcg.input``
+- HPCG run timestamps saved to a file ``cert-{N}-hpcg.tstamps``
