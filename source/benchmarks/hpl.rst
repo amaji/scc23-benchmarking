@@ -19,3 +19,11 @@ The time output will look like the following for HPL:
 
 There is no minimum run time associated with HPL.
 
+**Files to submit**
+
+- HPL output saved to a file ``cert-{N}-hpl.rslts``
+- HPL input file (``HPL.dat``) saved to a file ``cert-{N}-hpl.input``
+- HPL run timestamps saved to a file ``cert-{N}-hpl.tstamps``
+- :ref:`Run configurations<Configuration file> saved to a file ``cert-{N}-configuration.txt``
+
+
