@@ -24,6 +24,6 @@ There is no minimum run time associated with HPL.
 - HPL output saved to a file ``cert-{N}-hpl.rslts``
 - HPL input file (``HPL.dat``) saved to a file ``cert-{N}-hpl.input``
 - HPL run timestamps saved to a file ``cert-{N}-hpl.tstamps``
-- :ref:`Run configurations <benchmarks/general:Configuration file> saved to a file ``cert-{N}-configuration.txt``
+- :ref:`Run configurations <benchmarks/general:Configuration file>` saved to a file ``cert-{N}-configuration.txt``
 
 
