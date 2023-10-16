@@ -13,7 +13,7 @@ A hardware certification submission consists of a team:
 
    - The input file used, copied to a file named like ``cert-${NUMBER}-${BENCHMARK}.input``
    - The output produced, copied to a file named like ``cert-${NUMBER}-${BENCHMARK}.rslts``. Where ``${NUMBER}`` corresponds to the team’s current hardware certification attempt (i.e. ``1``, ``2``, ``3``, ``4``, or ``5``), and ``${BENCHMARK}`` is one of ``hpl``, ``hpcg``, ``mlperf``, for example: ``cert-1-hpcg.tstamps``
-   - The team should also record the information listed under the section :ref:`Configuration file<Configuration file>` below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid top500 submission and must be submitted with the HPL input and results files.
+   - The team should also record the information listed under the section :ref:`Configuration file<Configuration file>` below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid `top500 submission <https://top500.org/>`_ and must be submitted with the HPL input and results files.
 
 3. Running STREAM and OSU microbenchmarks at any time before or during the certification runs and including the corresponding ``*.rslts``, ``*.tstamps``, and ``*.input`` files with the other benchmark results. Check the details for each benchmark to see what information must be included.
 4. Uploading all of the files described above (``cert-*-*.*``, and ``cert-*-configuration.txt``) to the file server designated by the SCC committee. Teams are encouraged to organize their results into separate directories for each benchmark. An example is shown below.
@@ -47,7 +47,7 @@ A hardware certification submission consists of a team:
 
 The team liaison or another SCC committee member will then inspect the files described above to verify that the runs were valid and in conformance with the SCC23 Benchmarking rules. The team liaison or the benchmarking judges will visually inspect and document the team’s cluster hardware configuration, and may ask questions to understand the hardware configuration and/or changes from one certification attempt to another. For the result to be valid, all of the team's hardware, including spare replacement machines, must be either in the cluster’s rack or on the table with the rest of the cluster’s hardware. If any hardware is later found that was not visible during certification then the certification will be invalidated. 
 
-Judges will determine based on the timestamps for each run whether there is a spike in the power usage of the team that correlates with running the benchmark. Power usage will be checked at 1 second intervals to ensure that teams do not exceed the 4000W limit in order to comply with Top500 and SCC rules.
+Judges will determine based on the timestamps for each run whether there is a spike in the power usage of the team that correlates with running the benchmark. Power usage will be checked at 1 second intervals to ensure that teams do not exceed the power budget (maximum of 2000W per node and 4000W total) in order to comply with Top500 and SCC rules.
 
 If all results are valid, the runs have stayed below power limits, and the team has complied with the directions in this document plus any addendums made by the SCC committee, the team’s hardware configuration will be considered certified. If one of these is not met, the configuration will not be considered certified but will still count against a team’s limit of hardware configuration certification attempts.
 
