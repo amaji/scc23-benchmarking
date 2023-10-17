@@ -15,7 +15,7 @@ A hardware certification submission consists of a team:
    - The output produced, copied to a file named like ``cert-${NUMBER}-${BENCHMARK}.rslts``. Where ``${NUMBER}`` corresponds to the team’s current hardware certification attempt (i.e. ``1``, ``2``, ``3``, ``4``, or ``5``), and ``${BENCHMARK}`` is one of ``hpl``, ``hpcg``, ``mlperf``, for example: ``cert-1-hpcg.tstamps``
    - The team should also record the information listed under the section :ref:`Configuration file<Configuration file>` below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid `top500 submission <https://top500.org/>`_ and must be submitted with the HPL input and results files.
 
-3. Running STREAM and OSU microbenchmarks at any time before or during the certification runs and including the corresponding ``*.rslts``, ``*.tstamps``, and ``*.input`` files with the other benchmark results. Check the details for each benchmark to see what information must be included.
+3. Running STREAM and OSU microbenchmarks at any time before or during the certification runs and including the corresponding ``*.rslts``, ``*.tstamps``, and ``*.info`` files with the other benchmark results. *Check the details for each benchmark to see what information must be included.*
 4. Uploading all of the files described above (``cert-*-*.*``, and ``cert-*-configuration.txt``) to the file server designated by the SCC committee. Teams are encouraged to organize their results into separate directories for each benchmark. An example is shown below.
 
      .. code-block::
@@ -35,11 +35,11 @@ A hardware certification submission consists of a team:
 	|   |-- cert-1-mlperf.rslts
 	|   `-- cert-1-mlperf.tstamps
 	|-- osu
-	|   |-- cert-1-osu.input
+	|   |-- cert-1-osu.info
 	|   |-- cert-1-osu.rslts
 	|   `-- cert-1-osu.tstamps
 	`-- stream
-	    |-- cert-1-stream.input
+	    |-- cert-1-stream.info
 	    |-- cert-1-stream.rslts
 	    `-- cert-1-stream.tstamps
 
