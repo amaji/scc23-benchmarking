@@ -3,7 +3,7 @@ HPL Rules and Validation
 
 The HPL benchmark is described at https://www.top500.org/project/linpack/.
 
-The HPL output shows validity by the following line:
+When built from source, the HPL output shows the validity of the run on the following line:
 
 .. code-block:: bash
 

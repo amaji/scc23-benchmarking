@@ -3,7 +3,7 @@ HPCG Rules and Validation
 
 The HPCG run will produce a file named ``HPCG-Benchmark_<version>_<date>.txt`` You will need  to copy this file to your ``.rslts`` file. 
 
-The HPCG output file shows validity by the following line:
+The HPCG output file shows the validity of the run on the following line:
 
 .. code-block:: bash
 
