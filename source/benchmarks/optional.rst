@@ -1,7 +1,7 @@
 STREAM and OSU microbenchmark rules and validation
 --------------------------------------------------
 
-The secondary bennchmarks (STREAM and OSU microbenchmarks) can be run at any time between Nov 12, 2023, 8:00 AM MDT and Nov 13, 2023, 5:00 PM MDT. You only need to run these once, but make sure to include the results with each certification submission.
+The secondary benchmarks (STREAM and OSU microbenchmarks) can be run at any time between Nov 12, 2023, 8:00 AM MDT and Nov 13, 2023, 5:00 PM MDT. You only need to run these once, but make sure to include the results with each certification submission.
 
 STREAM
 ======
@@ -10,7 +10,7 @@ You can run STREAM on any single node within your cluster (hint: choose the node
 **Files to submit**
 
 - Output obtained by running STREAM in a file named ``cert-{N}-stream.rslts``
-- Hardware and runtime information in a file named ``cert-{N}-stream.input``
+- Hardware and runtime information in a file named ``cert-{N}-stream.info``
 
     - Processor name
     - Total last-level (L3) cache size in MB
@@ -27,7 +27,7 @@ You can run OSU microbenchmarks (``osu_latency`` and ``osu_bw``) between any two
 **Files to submit**
 
 - Combine the output obtained by running ``osu_latency`` and ``osu_bw`` in a single file named ``cert-{N}-osu.rslts``
-- Hardware and runtime information in a file named ``cert-{N}-osu.input``
+- Hardware and runtime information in a file named ``cert-{N}-osu.info``
 
     - Networking hardware details
     - Network bandwidth (as per specification)
