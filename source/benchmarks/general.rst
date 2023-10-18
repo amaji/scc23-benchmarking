@@ -43,7 +43,7 @@ A hardware certification submission consists of a team:
 	    |-- cert-1-stream.rslts
 	    `-- cert-1-stream.tstamps
 
-5. Within 10 minutes of completing the set of benchmark runs, sending one team member to alert their team liaison that they are ready to have their hardware configuration certified (you can do this before the upload is complete).
+5. Within 10 minutes of completing the set of benchmark runs, sending one team member to alert the SCC committee (ideally via their team liaison) that they are ready to have their hardware configuration certified (you can do this before the upload is complete).
 
 The team liaison or another SCC committee member will then inspect the files described above to verify that the runs were valid and in conformance with the SCC23 Benchmarking rules. The team liaison or the benchmarking judges will visually inspect and document the team’s cluster hardware configuration, and may ask questions to understand the hardware configuration and/or changes from one certification attempt to another. For the result to be valid, all of the team's hardware, including spare replacement machines, must be either in the cluster’s rack or on the table with the rest of the cluster’s hardware. If any hardware is later found that was not visible during certification then the certification will be invalidated. 
 
@@ -67,9 +67,9 @@ In order to comply with the Top500 requirements for power measurements, the ``ce
 	7) Cores per socket (e.g. 24)
 	8) Processor speed (in Mhz)
 	9) Accelerator/Co-Processor. If you have different Accelerators/Co-Processors please specify only the model HPL was executed on (e.g. NVIDIA V100 PCIe 32 GB)
-	10) Accelerator(s)/Co-Processor(s) per node that HPL was executed on (e.g. 2 NVIDIA V100s in node 1 and 2 NVIDIA P100s in node 2)
+	10) Number and type of accelerator(s)/co-processor(s) per node that HPL was executed on (e.g. 2 NVIDIA V100s in node 1 and 2 NVIDIA P100s in node 2)
 	11) Cores Per Accelerator/Co-Processor that HPL was executed on, for GPUs this is usually the number of shader clusters and not the total number of shaders. (e.g. 2688 cores per GPU)
-	12) System peak power used in watts (e.g. 2950W)
+	12) System peak power used in watts, including networking equipment (e.g. 2950W)
 	13) Number of compute node cores that HPL was executed on (e.g. 6 cores per node)
 	14) Primary Operating System and version (e.g. CentOS 7.5 1804)
 	15) Primary high speed network interconnect, (e.g. Mellanox EDR, OmniPath)
