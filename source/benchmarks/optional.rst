@@ -13,9 +13,9 @@ You can run STREAM on any single node within your cluster (hint: choose the node
 - Hardware and runtime information in a file named ``cert-{N}-stream.info``
 
     - Processor name
-    - Total last-level (L3) cache size in MB
+    - The sum (in MB) of last-level (L3) cache sizes used in the run
     - No. of cores used for STREAM run
-    - Compiler used for building STREAM
+    - Compiler and Compiler flags used for building STREAM
     - Array size in MB
 
 - Timestamps for running STREAM in a file ``cert-{N}-stream.tstamps``
