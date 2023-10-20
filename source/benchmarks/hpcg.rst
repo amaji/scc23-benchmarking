@@ -23,4 +23,5 @@ The HPCG time will be visible in the output file as follows. For the run to be v
 
 - HPCG output saved to a file ``cert-{N}-hpcg.rslts``
 - HPCG input file (``HPCG.dat``) saved to a file ``cert-{N}-hpcg.input``
+- The script (or commands) used to run HPCG saved to a file ``cert-{N}-hpcg.run``
 - HPCG run timestamps saved to a file ``cert-{N}-hpcg.tstamps``
