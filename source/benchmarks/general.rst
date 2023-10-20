@@ -13,9 +13,10 @@ A hardware certification submission consists of a team:
 
    - The input file used, copied to a file named like ``cert-${NUMBER}-${BENCHMARK}.input``
    - The output produced, copied to a file named like ``cert-${NUMBER}-${BENCHMARK}.rslts``. 
+   - The script used to run the benchmark (or the sequence of commands), copied to a file named like ``cert-${NUMBER}-${BENCHMARK}.run``. 
    - For HPL, The team should also record the information listed under the section :ref:`Configuration file<Configuration file>` below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid `top500 submission <https://top500.org/>`_ and must be submitted with the HPL input and results files.
 
-3. Running STREAM and OSU microbenchmarks at any time before or during the certification runs and including the corresponding ``*.rslts``, ``*.tstamps``, and ``*.info`` files with the other benchmark results. *Check the details for each benchmark to see what information must be included.*
+3. Running STREAM and OSU microbenchmarks at any time before or during the certification runs and including the corresponding ``*.rslts``, ``*.run``, ``*.tstamps``, and ``*.info`` files with the other benchmark results. *Check the details for each benchmark to see what information must be included.*
 4. Uploading all of the files described above (``cert-*-*.*``, and ``cert-*-configuration.txt``) to the file server designated by the SCC committee. Teams are encouraged to organize their results into separate directories for each benchmark. An example is shown below.
 
      .. code-block::
@@ -24,23 +25,28 @@ A hardware certification submission consists of a team:
 	|-- hpcg
 	|   |-- cert-1-hpcg.input
 	|   |-- cert-1-hpcg.rslts
+	|   |-- cert-1-hpcg.run
 	|   `-- cert-1-hpcg.tstamps
 	|-- hpl
 	|   |-- cert-1-configuration.txt
 	|   |-- cert-1-hpl.input
 	|   |-- cert-1-hpl.rslts
+	|   |-- cert-1-hpl.run
 	|   `-- cert-1-hpl.tstamps
 	|-- mlperf
 	|   |-- cert-1-mlperf.input
 	|   |-- cert-1-mlperf.rslts
+	|   |-- cert-1-mlperf.run
 	|   `-- cert-1-mlperf.tstamps
 	|-- osu
 	|   |-- cert-1-osu.info
 	|   |-- cert-1-osu.rslts
+	|   |-- cert-1-osu.run
 	|   `-- cert-1-osu.tstamps
 	`-- stream
 	    |-- cert-1-stream.info
 	    |-- cert-1-stream.rslts
+	    |-- cert-1-stream.run
 	    `-- cert-1-stream.tstamps
 
 5. Within 10 minutes of completing the set of benchmark runs, sending one team member to alert the SCC committee (ideally via their team liaison) that they are ready to have their hardware configuration certified (you can do this before the upload is complete).
