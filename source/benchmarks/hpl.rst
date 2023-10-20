@@ -1,4 +1,4 @@
-HPL Rules and Validation
+HPL rules and validation
 ------------------------
 
 The HPL benchmark is described at https://www.top500.org/project/linpack/.
