@@ -6,7 +6,7 @@
 2023 Student Cluster Competition (SCC23) benchmark submission instructions
 ==========================================================================
 
-WARNING: These instructions are still being updated. Please review the latest instructions periodically.
+**WARNING:** These instructions are still being updated. Please review the latest instructions periodically.
 
 -----
 
