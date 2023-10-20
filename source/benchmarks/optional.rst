@@ -31,7 +31,7 @@ You can run OSU microbenchmarks (``osu_latency`` and ``osu_bw``) between any two
 
     - Networking hardware details
     - Network bandwidth (as per specification)
-    - Compiler used for building OSU microbenchmarks
+    - Compiler and MPI library used for building OSU microbenchmarks
     - Maximum bandwidth obtained
     - Latency with message size 4K
 
