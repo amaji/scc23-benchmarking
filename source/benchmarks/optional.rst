@@ -18,6 +18,7 @@ You can run STREAM on any single node within your cluster (hint: choose the node
     - Compiler and Compiler flags used for building STREAM
     - Array size in MB
 
+- The script (or commands) used to run STREAM saved to a file ``cert-{N}-stream.run``
 - Timestamps for running STREAM in a file ``cert-{N}-stream.tstamps``
 
 OSU Microbenchmarks
@@ -35,4 +36,5 @@ You can run OSU microbenchmarks (``osu_latency`` and ``osu_bw``) between any two
     - Maximum bandwidth obtained
     - Latency with message size 4K
 
+- The script(s) (or commands) used to run ``osu_latency`` and ``osu_bw`` saved to a file ``cert-{N}-osu.run``
 - Timestamps for running ``osu_latency`` and ``osu_bw`` in a file ``cert-{N}-osu.tstamps``
