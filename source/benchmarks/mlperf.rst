@@ -1,4 +1,4 @@
-MLPerf Rules and Validation
+MLPerf rules and validation
 ---------------------------
 
 The instructions to run the MLPerf BERT inference benchmark and submit your results 
