@@ -1,4 +1,4 @@
-HPCG Rules and Validation
+HPCG rules and validation
 -------------------------
 
 The HPCG run will produce a file named ``HPCG-Benchmark_<version>_<date>.txt`` You will need  to copy this file to your ``.rslts`` file. 
