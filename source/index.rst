@@ -6,10 +6,6 @@
 2023 Student Cluster Competition (SCC23) benchmark submission instructions
 ==========================================================================
 
-**WARNING:** These instructions are still being updated. Please review the latest instructions periodically.
-
------
-
 During the 2023 Student Cluster Competition (SCC23), each team is required to run three core benchmarks (HPL, HPCG, and MLPerf-BERT Inference) and two secondary benchmarks (STREAM and OSU Microbenchmarks). The core benchmarks must be run during the benchmarking window of 8:00am--5:00pm MDT on Nov 13 (Mon), 2023, and must be run with the same hardware configuration. The secondary benchmarks can be run at any time between Nov 12, 2023, 8:00am MDT and Nov 13, 2023, 5:00pm MDT, and have no hardware configuration constraint except the power limit rules. All benchmark results must be submitted together following the instructions given below. The benchmark results submission process is also referred to as "hardware certification" in the rest of the document.
 
 Each team is allowed up to 5 hardware certification submission attempts. The SCC committee may at their discretion increase the allowable number of hardware certification submission attempts. Only one outstanding hardware certification submission attempt will be considered at a time.
