@@ -26,6 +26,7 @@ Once a hardware certification has been submitted and verified, a team cannot mod
    benchmarks/optional.rst
    benchmarks/interview.rst
    benchmarks/faq.rst
+   https://github.com/mlcommons/ck/blob/master/docs/tutorials/scc23-mlperf-inference-bert.md
 
 
 .. Indices and tables
