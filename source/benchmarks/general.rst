@@ -34,10 +34,16 @@ A hardware certification submission consists of a team:
 	|   |-- cert-1-hpl.run
 	|   `-- cert-1-hpl.tstamps
 	|-- mlperf
-	|   |-- cert-1-mlperf.input
-	|   |-- cert-1-mlperf.rslts
-	|   |-- cert-1-mlperf.run
-	|   `-- cert-1-mlperf.tstamps
+	|   |-- mlperf_submission_short.tar.gz
+	|   |-- mlperf_submission_short_summary.json
+	|   |-- mlperf_submission_short.run
+	|   |-- mlperf_submission_short.tstamps
+	|   |-- mlperf_submission_short.md
+	|   |-- mlperf_submission_1.tar.gz
+	|   |-- mlperf_submission_1_summary.json
+	|   |-- mlperf_submission_1.run
+	|   |-- mlperf_submission_1.tstamps
+	|   `-- mlperf_submission_1.md
 	|-- osu
 	|   |-- cert-1-osu.info
 	|   |-- cert-1-osu.rslts
