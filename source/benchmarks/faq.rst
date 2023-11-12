@@ -14,7 +14,7 @@ Frequently asked questions
 
   - **Our team optimized the code for X. Do we get extra credit for that?**
 
-    If your team makes *significant code contribution* to any benchmark or application, which is *validated* by the respective judges and *shared publicly* with the community *before the start of 
+    If your team made *significant code contribution* to any benchmark or application, which is *validated* by the respective judges and *shared publicly* with the community *before the start of 
     the competition*, then the judges can award bonus points to the team for that application or benchmark. Note that the awarding of bonus points will be at the discretion of the judge(s) and 
     may not exceed 10% of the total score for that benchmark or application.
 
