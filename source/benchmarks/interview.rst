@@ -1,6 +1,6 @@
 Benchmarking interview and grading
 ----------------------------------
-This year, the benchmark judges will interview each SCC23 team between 1:00 PM MDT and 3:00 PM MDT on Nov 13, 2023 and ask them questions about their cluster configurations and the benchmarks. 
+This year, the benchmark judges will interview each SCC23 team between 2:00 PM MDT and 4:00 PM MDT on Nov 13, 2023 and ask them questions about their cluster configurations and the benchmarks. 
 The objective of the interview is to get a comprehensive overview of the clusters and understand each team's tuning methodology.
 
 The overall benchmarking score for a team will depend on multiple factors such as the output obtained for each benchmark, the benchmarking interview, and the team's adherence to the rules set 
