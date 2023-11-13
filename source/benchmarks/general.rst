@@ -16,8 +16,10 @@ A hardware certification submission consists of a team:
    - The script used to run the benchmark (or the sequence of commands), copied to a file named like ``cert-${NUMBER}-${BENCHMARK}.run``. 
    - For HPL, The team should also record the information listed under the section :ref:`Configuration file<Configuration file>` below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid `top500 submission <https://top500.org/>`_ and must be submitted with the HPL input and results files.
 
-3. Running STREAM and OSU microbenchmarks at any time before or during the certification runs and including the corresponding ``*.rslts``, ``*.run``, ``*.tstamps``, and ``*.info`` files with the other benchmark results. *Check the details for each benchmark to see what information must be included.*
-4. Uploading all of the files described above (``cert-*-*.*``, and ``cert-*-configuration.txt``) to the file server designated by the SCC committee. Teams are encouraged to organize their results into separate directories for each benchmark. An example is shown below.
+3. **In general, teams must use at least 2 nodes for running HPL and HPCG and 1 or more nodes for running MLPerf Inference.** An exception to this rule may be granted if (you have hardware that cannot be physically reconfigured) AND (you have only one node containing GPUs) AND (the power consumption for the GPU node is within the 2000W power limit). In this scenario, please contact the SCC23 committee and get approval to use 1 node for HPL and HPCG.
+
+4. Running STREAM and OSU microbenchmarks at any time before or during the certification runs and including the corresponding ``*.rslts``, ``*.run``, ``*.tstamps``, and ``*.info`` files with the other benchmark results. *Check the details for each benchmark to see what information must be included.*
+5. Uploading all of the files described above (``cert-*-*.*``, and ``cert-*-configuration.txt``) to the file server designated by the SCC committee. Teams are encouraged to organize their results into separate directories for each benchmark. An example is shown below.
 
      .. code-block::
 
@@ -55,7 +57,7 @@ A hardware certification submission consists of a team:
 	    |-- cert-1-stream.run
 	    `-- cert-1-stream.tstamps
 
-5. Within 10 minutes of completing the set of benchmark runs, sending one team member to alert the SCC committee (ideally via their team liaison) that they are ready to have their hardware configuration certified (you can do this before the upload is complete).
+6. Within 10 minutes of completing the set of benchmark runs, sending one team member to alert the SCC committee (ideally via their team liaison) that they are ready to have their hardware configuration certified (you can do this before the upload is complete).
 
 The team liaison or another SCC committee member will then inspect the files described above to verify that the runs were valid and in conformance with the SCC23 Benchmarking rules. The team liaison or the benchmarking judges will visually inspect and document the team’s cluster hardware configuration, and may ask questions to understand the hardware configuration and/or changes from one certification attempt to another. For the result to be valid, all of the team's hardware, including spare replacement machines, must be either in the cluster’s rack or on the table with the rest of the cluster’s hardware. If any hardware is later found that was not visible during certification then the certification will be invalidated. 
 
